@@ -1,0 +1,50 @@
+h1 {
+  font-family: "Atkinson Hyperlegible";
+  font-size: 70px;
+}
+
+h2 {
+  font-family: "Atkinson Hyperlegible";
+  font-size: 50px;
+}
+
+p {
+  font-family: "Atkinson Hyperlegible";
+  font-size: 18px;
+}
+
+#navbar-example2 {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.scrollspy-example {
+  padding-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-section {
+  flex: 2 0 66.66667%;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-direction: column; /* Stack elements vertically */
+  padding: 80px;
+}
+
+.right-section {
+  flex: 1 0 33.33333%;
+}
+
+.full-width-section {
+  width: 100%; /* Span the entire width of the container */
+  padding: 15px; /* Add padding to all sides */
+  box-sizing: border-box; /* Include padding in the width calculation */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
