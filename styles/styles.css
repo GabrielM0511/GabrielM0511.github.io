@@ -1,50 +1,42 @@
+/* Add padding to target sections to avoid being hidden behind navbar */
 h1 {
-  font-family: "Atkinson Hyperlegible";
-  font-size: 70px;
-}
-
-h2 {
-  font-family: "Atkinson Hyperlegible";
-  font-size: 50px;
+  padding-top: 60px; /* Adjust as needed */
+  text-align: center; /* Center align the headers */
 }
 
 p {
-  font-family: "Atkinson Hyperlegible";
-  font-size: 18px;
+  text-align: center;
 }
-
-#navbar-example2 {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-.scrollspy-example {
-  padding-top: 100px;
+/* New CSS for horizontal layout and centered positioning */
+.horizontal-cards {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 
-.left-section {
-  flex: 2 0 66.66667%;
+.horizontal-cards .card {
+  margin: 0px 100px 0px 100px;
+}
+.flex-container {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  flex-direction: column; /* Stack elements vertically */
-  padding: 80px;
 }
 
-.right-section {
-  flex: 1 0 33.33333%;
+.flex-item-text {
+  flex: 2;
+  padding: 20px; /* Adjust as needed */
 }
 
-.full-width-section {
-  width: 100%; /* Span the entire width of the container */
-  padding: 15px; /* Add padding to all sides */
-  box-sizing: border-box; /* Include padding in the width calculation */
-  display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+.flex-item-image {
+  flex: 1;
+}
+
+/* Optional: Make the image responsive */
+.flex-item-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.smaller-image {
+  width: 50%;
 }

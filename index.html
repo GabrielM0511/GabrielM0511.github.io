@@ -1,43 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gabriel's</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Link to external CSS file -->
+    <!-- Bootstrap CSS -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=Atkinson Hyperlegible"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="styles/styles.css" />
+    <title>Gabriel's e-portfolio</title>
   </head>
   <body>
-    <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
-      <a class="navbar-brand" href="#">Gabriel Morales</a>
+    <!-- Anchor to the top of the page -->
+    <div id="top"></div>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <nav
+      id="navbar-example2"
+      class="navbar navbar-light bg-light px-3 sticky-top"
+    >
+      <a class="navbar-brand" href="#top">Gabriel Morales</a>
       <ul class="nav nav-pills">
         <li class="nav-item">
-          <a class="nav-link" href="#scrollspyHeading1">Home</a>
+          <a class="nav-link" href="#top">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#scrollspyHeading2">About Me</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="resume-link" href="resume.pdf" target="_blank"
-            >Resume</a
-          >
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="#scrollspyHeading3">Skills</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#scrollspyHeading4">Projects</a>
+          <a class="nav-link" href="#scrollspyHeading4">Projects </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#scrollspyHeading5">Contact</a>
@@ -51,63 +49,175 @@
       class="scrollspy-example"
       tabindex="0"
     >
-      <div class="left-section">
-        <h1 id="scrollspyHeading1">Hi There!</h1>
-        <h1>I'm Gabriel Morales</h1>
-        <p>
-          I am a student at Saskatchewan Polytechnic currently pursuing my
-          Computer System Technology Diploma.
-        </p>
-      </div>
-      <div class="right-section">
-        <img src="/pictures/developer.png" alt="" />
-      </div>
-
-      <!-- Modified HTML for the second row -->
-      <div class="full-width-section">
-        <h2 id="scrollspyHeading2" class="text-center">Skills</h2>
-        <p>
-          As a soon-to-be graduate from Saskatchewan Polytechnic's Computer
-          System Technology program, I possess a diverse skill set that equips
-          me for success as a full stack developer. Throughout my education,
-          I've cultivated proficiency in a wide array of programming languages,
-          including Java, C, C++, and JavaScript, along with hands-on experience
-          in mobile development and website development. Notably, I've honed my
-          skills in HTML, CSS, and JavaScript, and have worked extensively with
-          frameworks such as jQuery, Vue, and Node.js, laying a strong
-          foundation for front-end development. Additionally, my coursework has
-          provided me with comprehensive knowledge in cybersecurity, Linux
-          fundamentals, and Microsoft Access, ensuring a well-rounded
-          understanding of computer systems and their security measures.
-        </p>
-        <p>
-          Driven by a passion for creating seamless user experiences, I aspire
-          to leverage my expertise in both front-end and back-end development to
-          become a proficient full stack developer. My hands-on experience with
-          computer hardware, coupled with a keen understanding of software
-          development principles, positions me to excel in designing and
-          implementing robust, scalable applications. With a commitment to
-          lifelong learning and a solid foundation in computer science, I am
-          eager to contribute my skills and enthusiasm to the dynamic field of
-          software development, aiming to deliver innovative solutions that meet
-          the evolving needs of users and businesses alike.
-        </p>
+      <div class="flex-container">
+        <div class="flex-item-text">
+          <h1 id="scrollspyHeading1">
+            Hi There!<br />
+            I'm Gabriel Morales
+          </h1>
+          <p>
+            I'm a student at Saskatchewan Polytechnic currently pursuing my
+            Computer System Technology Diploma.
+          </p>
+          <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-light">
+              <a href="/resume.pdf ">Resume</a>
+            </button>
+          </div>
+        </div>
+        <div class="flex-item-image">
+          <img src="pictures/developer.png" alt="" class="smaller-image" />
+        </div>
       </div>
 
-      <div class="full-width-section">
-        <h2 id="scrollspyHeading3" class="text-center">Second heading</h2>
-        <p>This is a test</p>
+      <h1 id="scrollspyHeading2">About Me</h1>
+      <p>
+        I'm a passionate student with a keen interest in creating captivating
+        and user-friendly web applications. As a soon to graduate student, I
+        believe I have acquired a wide set of skills that are crucial for any
+        web developer. Thanks to my education, I'm experienced when it comes
+        down to developing the front end of an application using different
+        frameworks and tools. I'm alsom more that capable of sustaining and
+        managing the back end of the web application. Thanks to my projects, not
+        only I have become proficient with these technologies and tools, but I'm
+        also very familiar with the agile development cycle. I enjoy staying up
+        to date with any rising technologies and how these influence the web
+        development field.
+      </p>
+      <h1 id="scrollspyHeading3">Skills</h1>
+      <p>
+        During my training at Saskatchewan Polytechnic, I've gained a vast
+        amount of experience in a wide variety of fields and technologies. The
+        following are a few of the tools I'm familiar with:
+      </p>
+      <div class="horizontal-cards">
+        <div class="card" style="width: 8rem">
+          <img src="/pictures/postman.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center">Postman</h5>
+          </div>
+        </div>
+
+        <div class="card" style="width: 8rem">
+          <img src="/pictures/html.svg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center">HTML</h5>
+          </div>
+        </div>
+
+        <div class="card" style="width: 8rem">
+          <img src="/pictures/css.svg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center">CSS</h5>
+          </div>
+        </div>
+
+        <div class="card" style="width: 8rem">
+          <img src="/pictures/js.svg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center">JavaScript</h5>
+          </div>
+        </div>
+
+        <div class="card" style="width: 8rem">
+          <img src="/pictures/git.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center">Git</h5>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="horizontal-cards">
+        <div class="card" style="width: 8rem">
+          <img src="/pictures/nodejs.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center">node.js</h5>
+          </div>
+        </div>
+
+        <div class="card" style="width: 8rem">
+          <img src="/pictures/bootstrap-4.svg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center">Bootstrap</h5>
+          </div>
+        </div>
+
+        <div class="card" style="width: 8rem">
+          <img src="/pictures/mongoDB.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center">MongoDB</h5>
+          </div>
+        </div>
+
+        <div class="card" style="width: 7rem">
+          <img src="/pictures/java.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center">Java</h5>
+          </div>
+        </div>
       </div>
 
-      <div class="full-width-section">
-        <h2 id="scrollspyHeading4" class="text-center">Second heading</h2>
-        <p>This is a test</p>
+      <h1 id="scrollspyHeading4">Projects</h1>
+      <p>
+        While at Saskatchewan Polytechnic, I was responsible for developing a
+        wide variety of projects. Each of these were targeted to improve and
+        develop a particular skill. The following are a few of the projects that
+        I've part of:
+      </p>
+
+      <!-- Modified card layout with new class -->
+      <div class="horizontal-cards">
+        <div class="card" style="width: 18rem">
+          <img src="/pictures/marketplace.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Marketplace Website</h5>
+            <p class="card-text">
+              Simple web application of a marketplace where entries are
+              dynamically updated using MongoDB.
+            </p>
+            <a href="#" class="btn btn-primary">View code in GitHub</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <img src="/pictures/CDLogo.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Capstone Project</h5>
+            <p class="card-text">
+              In this project, me along with 7 other colleguaes worked together
+              to create a full fledged website to The Clean Divorce
+            </p>
+            <a href="https://www.thecleandivorce.com/" class="btn btn-primary"
+              >Check the Live Website Here!</a
+            >
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <img src="/pictures/cards.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Self-hosted Card Game</h5>
+            <p class="card-text">Basic card game.</p>
+            <a href="#" class="btn btn-primary">View code in GitHub</a>
+          </div>
+        </div>
       </div>
 
-      <div class="full-width-section">
-        <h2 id="scrollspyHeading5" class="text-center">Second heading</h2>
-        <p>This is a test</p>
-      </div>
+      <h1 id="scrollspyHeading5">Contact</h1>
+      <p>Feel free to reach out!</p>
+      <p>Phone: 306-xxx-xxxx</p>
+      <p>Email: random@email.com</p>
     </div>
-  </body>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  --></body>
 </html>
