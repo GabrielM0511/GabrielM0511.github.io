@@ -12,6 +12,11 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="styles/styles.css" />
     <title>Gabriel's e-portfolio</title>
   </head>
@@ -19,10 +24,7 @@
     <!-- Anchor to the top of the page -->
     <div id="top"></div>
     <!-- Optional JavaScript; choose one of the two! -->
-    <nav
-      id="navbar-example2"
-      class="navbar navbar-light bg-light px-3 sticky-top"
-    >
+    <nav id="navbar-example2" class="navbar navbar-light px-3 sticky-top">
       <a class="navbar-brand" href="#top">Gabriel Morales</a>
       <ul class="nav nav-pills">
         <li class="nav-item">
@@ -49,6 +51,7 @@
       class="scrollspy-example"
       tabindex="0"
     >
+      <!-- HOME SECTION -->
       <div class="flex-container">
         <div class="flex-item-text">
           <h1 id="scrollspyHeading1">
@@ -60,8 +63,10 @@
             Computer System Technology Diploma.
           </p>
           <div class="d-flex justify-content-center">
-            <button type="button" class="btn btn-light">
-              <a href="/resume.pdf ">Resume</a>
+            <button type="button" class="btn btn-primary">
+              <a href="/resume.pdf " style="color: white; text-decoration: none"
+                >Resume</a
+              >
             </button>
           </div>
         </div>
@@ -70,135 +75,212 @@
         </div>
       </div>
 
-      <h1 id="scrollspyHeading2">About Me</h1>
+      <!-- ABOUT ME SECTION WITH IMAGE -->
+      <div class="flex-container">
+        <div class="flex-item-text">
+          <h1 id="scrollspyHeading2">Learn a bit about me!</h1>
+          <p>
+            I'm a passionate student with a keen interest in creating
+            captivating and user-friendly web applications. As a
+            soon-to-graduate student, I believe I have acquired a wide set of
+            skills that are crucial for any web developer. Thanks to my
+            education, I'm experienced when it comes to developing the front end
+            of an application using different frameworks and tools. I'm also
+            more than capable of sustaining and managing the back end of the web
+            application. Thanks to my projects, not only I have become
+            proficient with these technologies and tools, but I'm also very
+            familiar with the agile development cycle. I enjoy staying up to
+            date with any rising technologies and how these influence the web
+            development field.
+          </p>
+        </div>
+        <div class="flex-item-image">
+          <img src="pictures/Saskpolytech.png" alt="" class="smaller-image" />
+        </div>
+      </div>
+
+      <!-- ABOUT ME WITHOUT IMAGE -->
+      <!-- <h1 id="scrollspyHeading2">About Me</h1>
       <p>
         I'm a passionate student with a keen interest in creating captivating
-        and user-friendly web applications. As a soon to graduate student, I
+        and user-friendly web applications. As a soon-to-graduate student, I
         believe I have acquired a wide set of skills that are crucial for any
-        web developer. Thanks to my education, I'm experienced when it comes
-        down to developing the front end of an application using different
-        frameworks and tools. I'm alsom more that capable of sustaining and
-        managing the back end of the web application. Thanks to my projects, not
-        only I have become proficient with these technologies and tools, but I'm
-        also very familiar with the agile development cycle. I enjoy staying up
-        to date with any rising technologies and how these influence the web
-        development field.
-      </p>
-      <h1 id="scrollspyHeading3">Skills</h1>
-      <p>
-        During my training at Saskatchewan Polytechnic, I've gained a vast
-        amount of experience in a wide variety of fields and technologies. The
-        following are a few of the tools I'm familiar with:
-      </p>
-      <div class="horizontal-cards">
-        <div class="card" style="width: 8rem">
-          <img src="/pictures/postman.png" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title" style="text-align: center">Postman</h5>
+        web developer. Thanks to my education, I'm experienced when it comes to
+        developing the front end of an application using different frameworks
+        and tools. I'm also more than capable of sustaining and managing the
+        back end of the web application. Thanks to my projects, not only I have
+        become proficient with these technologies and tools, but I'm also very
+        familiar with the agile development cycle. I enjoy staying up to date
+        with any rising technologies and how these influence the web development
+        field.
+      </p> -->
+
+      <!-- SKILLS SECTION -->
+      <div>
+        <h1 id="scrollspyHeading3">Skills</h1>
+        <p>
+          During my training at Saskatchewan Polytechnic, I've gained a vast
+          amount of experience in a wide variety of fields and technologies. The
+          following are a few of the tools I'm familiar with:
+        </p>
+        <br />
+        <div class="horizontal-cards">
+          <div class="card" style="width: 8rem">
+            <img src="/pictures/postman.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center">Postman</h5>
+            </div>
+          </div>
+
+          <div class="card" style="width: 8rem">
+            <img src="/pictures/html.svg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center">HTML</h5>
+            </div>
+          </div>
+
+          <div class="card" style="width: 8rem">
+            <img src="/pictures/css.svg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center">CSS</h5>
+            </div>
+          </div>
+
+          <div class="card" style="width: 8rem">
+            <img src="/pictures/js.svg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center">JavaScript</h5>
+            </div>
+          </div>
+
+          <div class="card" style="width: 8rem">
+            <img src="/pictures/git.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center">Git</h5>
+            </div>
           </div>
         </div>
-
-        <div class="card" style="width: 8rem">
-          <img src="/pictures/html.svg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title" style="text-align: center">HTML</h5>
+        <br />
+        <div class="horizontal-cards">
+          <div class="card" style="width: 8rem">
+            <img src="/pictures/nodejs.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center">node.js</h5>
+            </div>
           </div>
-        </div>
 
-        <div class="card" style="width: 8rem">
-          <img src="/pictures/css.svg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title" style="text-align: center">CSS</h5>
+          <div class="card" style="width: 8rem">
+            <img
+              src="/pictures/bootstrap-4.svg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center">Bootstrap</h5>
+            </div>
           </div>
-        </div>
 
-        <div class="card" style="width: 8rem">
-          <img src="/pictures/js.svg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title" style="text-align: center">JavaScript</h5>
+          <div class="card" style="width: 8rem">
+            <img src="/pictures/mongoDB.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center">MongoDB</h5>
+            </div>
           </div>
-        </div>
 
-        <div class="card" style="width: 8rem">
-          <img src="/pictures/git.png" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title" style="text-align: center">Git</h5>
+          <div class="card" style="width: 7rem">
+            <img src="/pictures/java.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center">Java</h5>
+            </div>
           </div>
         </div>
       </div>
-      <br />
-      <div class="horizontal-cards">
-        <div class="card" style="width: 8rem">
-          <img src="/pictures/nodejs.png" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title" style="text-align: center">node.js</h5>
-          </div>
-        </div>
 
-        <div class="card" style="width: 8rem">
-          <img src="/pictures/bootstrap-4.svg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title" style="text-align: center">Bootstrap</h5>
-          </div>
-        </div>
-
-        <div class="card" style="width: 8rem">
-          <img src="/pictures/mongoDB.png" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title" style="text-align: center">MongoDB</h5>
-          </div>
-        </div>
-
-        <div class="card" style="width: 7rem">
-          <img src="/pictures/java.png" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title" style="text-align: center">Java</h5>
-          </div>
-        </div>
-      </div>
-
-      <h1 id="scrollspyHeading4">Projects</h1>
-      <p>
-        While at Saskatchewan Polytechnic, I was responsible for developing a
-        wide variety of projects. Each of these were targeted to improve and
-        develop a particular skill. The following are a few of the projects that
-        I've part of:
-      </p>
-
-      <!-- Modified card layout with new class -->
-      <div class="horizontal-cards">
-        <div class="card" style="width: 18rem">
-          <img src="/pictures/marketplace.png" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Marketplace Website</h5>
-            <p class="card-text">
-              Simple web application of a marketplace where entries are
-              dynamically updated using MongoDB.
+      <!-- PROJECTS SECTION -->
+      <div>
+        <h1 id="scrollspyHeading4">Projects</h1>
+        <p>
+          While at Saskatchewan Polytechnic, I was responsible for developing a
+          wide variety of projects. Each of these were targeted to improve and
+          develop a particular skill. The following are a few of the projects
+          that I've part of:
+        </p>
+        <!-- PROJECTS - THE CLEAN DIVORCE -->
+        <div class="flex-container">
+          <div class="flex-item-text">
+            <h2 id="scrollspyHeading2">Capstone Project - The Clean Divorce</h2>
+            <p style="text-align: left">
+              In this Project, I worked with 7 other colleagues to create a
+              full-fledge website to a client. During the first months of
+              development, we spend all of our time researching what are the
+              best possible technologies that are the most suitable for the
+              client. From beginning to the end, we use an agile work
+              development.
             </p>
-            <a href="#" class="btn btn-primary">View code in GitHub</a>
+            <p style="text-align: left">When it came down to coding, this</p>
+            <button type="button" class="btn btn-primary">
+              <a
+                href="https://www.thecleandivorce.com/"
+                target="_blank"
+                style="color: white; text-decoration: none"
+              >
+                Check the live site here!
+              </a>
+            </button>
+          </div>
+          <div class="flex-item-image">
+            <img
+              src="pictures/CDLogo.png"
+              alt=""
+              class="smaller-image"
+              style="width: 35%"
+            />
           </div>
         </div>
-
-        <div class="card" style="width: 18rem">
-          <img src="/pictures/CDLogo.png" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Capstone Project</h5>
-            <p class="card-text">
-              In this project, me along with 7 other colleguaes worked together
-              to create a full fledged website to The Clean Divorce
-            </p>
-            <a href="https://www.thecleandivorce.com/" class="btn btn-primary"
-              >Check the Live Website Here!</a
-            >
+        <!-- PROJECTS - SIMPLE MARKETPLACE -->
+        <div class="flex-container">
+          <div class="flex-item-text">
+            <h2 id="scrollspyHeading2">Marketplace Web Application</h2>
+            <p style="text-align: left">TO DO</p>
+            <button type="button" class="btn btn-primary">
+              <a
+                href="#"
+                target="_blank"
+                style="color: white; text-decoration: none"
+                >Check the code here!
+              </a>
+            </button>
+          </div>
+          <div class="flex-item-image">
+            <img
+              src="pictures/marketplace.png"
+              alt=""
+              class="smaller-image"
+              style="width: 35%"
+            />
           </div>
         </div>
-
-        <div class="card" style="width: 18rem">
-          <img src="/pictures/cards.png" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Self-hosted Card Game</h5>
-            <p class="card-text">Basic card game.</p>
-            <a href="#" class="btn btn-primary">View code in GitHub</a>
+        <!-- PROJECTS - SIMPLE MARKETPLACE -->
+        <div class="flex-container">
+          <div class="flex-item-text">
+            <h2 id="scrollspyHeading2">Self-hosted Card Game</h2>
+            <p style="text-align: left">TO DO</p>
+            <button type="button" class="btn btn-primary">
+              <a
+                href="#"
+                target="_blank"
+                style="color: white; text-decoration: none"
+                >Check the code here!
+              </a>
+            </button>
+          </div>
+          <div class="flex-item-image">
+            <img
+              src="pictures/cards.png"
+              alt=""
+              class="smaller-image"
+              style="width: 35%"
+            />
           </div>
         </div>
       </div>
